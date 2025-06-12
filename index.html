@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Travel AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="bot-avatar">🇫🇷</div>
+            <div class="header-info">
+                <h1>France Travel AI Assistant</h1>
+                <p class="status" id="status">Découvrez la France with real-time data</p>
+            </div>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will appear here -->
+        </div>
+        
+        <div class="loading-indicator" id="loadingIndicator">
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <span>Fetching latest France tourism data...</span>
+        </div>
+        
+        <div class="chat-input-container">
+            <div class="input-wrapper">
+                <input type="text" id="userInput" placeholder="Ask me about France travel..." maxlength="500">
+                <button id="sendButton" class="send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="suggested-questions">
+                <button class="suggestion-btn" data-question="What are the most popular destinations in France?">Popular destinations</button>
+                <button class="suggestion-btn" data-question="France tourism statistics">Tourism stats</button>
+                <button class="suggestion-btn" data-question="Best French cuisine to try">French cuisine</button>
+                <button class="suggestion-btn" data-question="Best time to visit France">Best travel time</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
